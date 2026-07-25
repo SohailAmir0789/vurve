@@ -1,0 +1,7 @@
+node_modules/
+.env
+dev_uploads/
+mock_s3_storage/
+scratch/
+*.log
+.DS_Store

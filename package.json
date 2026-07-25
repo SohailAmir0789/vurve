@@ -1,0 +1,29 @@
+{
+  "name": "vurve-api",
+  "version": "1.0.0",
+  "description": "Backend API for Vurve — a short-form video platform",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "worker": "node worker/videoProcessor.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1090.0",
+    "@aws-sdk/s3-request-presigner": "^3.1090.0",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.10.0",
+    "pg": "^8.12.0",
+    "uuid": "^14.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "ffmpeg-static": "^5.3.0",
+    "@ffprobe-installer/ffprobe": "^2.1.2"
+  }
+}
